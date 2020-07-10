@@ -36,7 +36,7 @@ github_username:  ip413
 # plugins:
   # - jekyll-feed
 
-# theme: jekyll-theme-cayman
+theme: jekyll-theme-cayman
 
 # Exclude from processing.
 # The following items will not be processed, by default.

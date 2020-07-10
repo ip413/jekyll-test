@@ -1,0 +1,158 @@
+<h2 id="sql-queries">SQL queries</h2>
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">avg</span><span class="p">(</span><span class="n">glosy_niewazne_proc</span><span class="p">)</span> <span class="k">from</span> <span class="n">runda1</span>
+</code></pre></div></div>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_biedron</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">biedron</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_bosak</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">bosak</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_duda</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">duda</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_holownia</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">holownia</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_jakubiak</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">jakubiak</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_kosiniak</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">kosiniak</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_piotrowski</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">piotrowski</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_tanajno</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">tanajno</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_trzaskowski</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">trzaskowski</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_witkowski</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">witkowski</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">100</span><span class="p">.</span><span class="mi">0</span> <span class="o">*</span> <span class="k">sum</span><span class="p">(</span><span class="n">wynik_zoltek</span><span class="p">)</span><span class="o">/</span><span class="n">wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">zoltek</span>
+<span class="k">from</span> <span class="p">(</span><span class="k">select</span> <span class="o">*</span>
+    <span class="k">from</span> <span class="n">runda1</span>
+    <span class="k">where</span> <span class="n">glosy_niewazne_proc</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">44011970855008</span><span class="p">),</span>
+    <span class="p">(</span><span class="k">select</span> <span class="k">sum</span><span class="p">(</span><span class="n">glosy_wazne</span><span class="p">)</span> <span class="k">as</span> <span class="n">wazne</span>
+    <span class="k">from</span> <span class="n">runda1</span>
+    <span class="k">where</span> <span class="n">glosy_niewazne_proc</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">44011970855008</span><span class="p">);</span>
+</code></pre></div></div>
+<p>And one more query with “&gt;” instead of “&lt;=”.</p>
+
+<h2 id="results">Results</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>official</th>
+      <th>low invalid</th>
+      <th>low invalid, change</th>
+      <th>high invalid</th>
+      <th>high invalid, change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>biedron</td>
+      <td>2.225</td>
+      <td>2.293</td>
+      <td>0.069</td>
+      <td>1.964</td>
+      <td>-0.260</td>
+    </tr>
+    <tr>
+      <td>bosak</td>
+      <td>6.781</td>
+      <td>6.807</td>
+      <td>0.025</td>
+      <td>6.685</td>
+      <td>-0.097</td>
+    </tr>
+    <tr>
+      <td>duda</td>
+      <td>43.502</td>
+      <td>42.047</td>
+      <td>-1.455</td>
+      <td>49.018</td>
+      <td>5.515</td>
+    </tr>
+    <tr>
+      <td>holownia</td>
+      <td>13.865</td>
+      <td>14.083</td>
+      <td>0.217</td>
+      <td>13.041</td>
+      <td>-0.824</td>
+    </tr>
+    <tr>
+      <td>jakubiak</td>
+      <td>0.173</td>
+      <td>0.174</td>
+      <td>0.001</td>
+      <td>0.170</td>
+      <td>-0.003</td>
+    </tr>
+    <tr>
+      <td>kosiniak</td>
+      <td>2.365</td>
+      <td>2.318</td>
+      <td>-0.047</td>
+      <td>2.543</td>
+      <td>0.178</td>
+    </tr>
+    <tr>
+      <td>piotrowski</td>
+      <td>0.108</td>
+      <td>0.108</td>
+      <td>-0.001</td>
+      <td>0.111</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>tanajno</td>
+      <td>0.144</td>
+      <td>0.143</td>
+      <td>0.000</td>
+      <td>0.145</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>trzaskowski</td>
+      <td>30.462</td>
+      <td>31.644</td>
+      <td>1.182</td>
+      <td>25.980</td>
+      <td>-4.482</td>
+    </tr>
+    <tr>
+      <td>witkowski</td>
+      <td>0.140</td>
+      <td>0.146</td>
+      <td>0.006</td>
+      <td>0.119</td>
+      <td>-0.022</td>
+    </tr>
+    <tr>
+      <td>zoltek</td>
+      <td>0.234</td>
+      <td>0.236</td>
+      <td>0.003</td>
+      <td>0.224</td>
+      <td>-0.009</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/assets/img/official-vs-low-invalid-vs-high-invalid-votes.png" alt="" /></p>
+
+<p><img src="/assets/img/official-vs-low-invalid-vs-high-invalid-votes-2.png" alt="" /></p>
+
+<h2 id="discussion">Discussion</h2>
+
+<p>We have two groups:</p>
+<ul>
+  <li>for polling stations with low rate of invalid votes
+    <ul>
+      <li><strong>Biedroń, Bosak, Holownia, Jakubiak, Trzaskowski, Witkowski, Żółtek</strong> had better results than official</li>
+      <li><strong>Duda, Kosiniak, Piotrowski</strong> had worse results than official</li>
+    </ul>
+  </li>
+  <li>for polling stations with high rate of invalid votes
+    <ul>
+      <li><strong>Duda, Kosiniak, Piotrowski, Tanajno</strong> had better results than official</li>
+      <li><strong>Biedroń, Bosak, Holownia, Jakubiak, Trzaskowski, Witkowski, Żółtek</strong> had wore results than official</li>
+    </ul>
+  </li>
+</ul>
+
+<p>What is the reason of this? Hard to say. Probably there is some corelation between invalid votes and rural areas where Duda and Piotrowski had many voters.</p>
+
+<p>Invalid votes rate for rural areas where Trzaskowski and Holownia had good result should be checked.</p>
+
+<p>But once more we could see <strong>Duda, Kosiniak, Piotrowski</strong> in one group and <strong>Biedroń, Bosak, Holownia, Trzaskowski, Witkowski</strong> in another. Interesting!</p>
+
+<p>One more thing, <strong>Duda, Kosiniak, Piotrowski</strong> have better result in polling stations with high ratio of invalid votes and polling stations with no invalid votes. At the same context <strong>Biedroń, Bosak, Holownia, Trzaskowski, Witkowski</strong> have worse result. Something very interesting is happening here, or I made some mistake somewhere.</p>
