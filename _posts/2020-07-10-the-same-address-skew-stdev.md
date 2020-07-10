@@ -18,7 +18,7 @@ Plus node scripts calculating standard deviation, Pearson's second skewness coef
 
 ## Results and discussion
 
-Eight files: Eight files: 
+Eight files: 
 * [{{site.baseurl}}/assets/json/02-skew-standard-deviation-address-asc.json]({{site.baseurl}}/assets/json/02-skew-standard-deviation-address-asc.json) 
 * [{{site.baseurl}}/assets/json/02-skew-standard-deviation-address-desc.json]({{site.baseurl}}/assets/json/02-skew-standard-deviation-address-desc.json) 
 * [{{site.baseurl}}/assets/json/02-skew-standard-deviation-asc.json]({{site.baseurl}}/assets/json/02-skew-standard-deviation-asc.json) 
