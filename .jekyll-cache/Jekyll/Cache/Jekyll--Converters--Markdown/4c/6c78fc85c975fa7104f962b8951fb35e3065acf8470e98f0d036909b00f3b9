@@ -1,4 +1,0 @@
-I"m<h2 id="sql-queries">SQL queries</h2>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="k">avg</span><span class="p">(</span><span class="n">glosy_niewazne_proc</span><span class="p">)</span> <span class="k">from</span> <span class="n">runda1</span>
-</code></pre></div></div>
-:ET

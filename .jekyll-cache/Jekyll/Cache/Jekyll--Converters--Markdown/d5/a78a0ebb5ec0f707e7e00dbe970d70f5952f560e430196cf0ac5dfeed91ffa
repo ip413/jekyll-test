@@ -1,7 +1,0 @@
-I"œ<h2 id="sql-query">SQL query</h2>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">symbol_kontrolny</span><span class="p">,</span> <span class="n">karty_niewazne</span><span class="p">,</span> <span class="n">siedziba</span>
-<span class="k">from</span> <span class="n">runda1</span>
-<span class="k">where</span> <span class="n">karty_niewazne</span> <span class="o">&gt;</span> <span class="mi">3</span>
-<span class="k">order</span> <span class="k">by</span> <span class="n">karty_niewazne</span> <span class="k">desc</span><span class="p">;</span>
-</code></pre></div></div>
-:ET

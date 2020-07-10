@@ -1,6 +1,0 @@
-I"0<h2 id="sql-query">SQL query</h2>
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">select</span> <span class="n">symbol_kontrolny</span><span class="p">,</span> <span class="n">koperty_wrzucone_do_urny</span><span class="p">,</span> <span class="n">karty_z_kopert</span><span class="p">,</span> <span class="n">karty_z_kopert</span> <span class="o">-</span> <span class="n">koperty_wrzucone_do_urny</span> <span class="k">as</span> <span class="n">roznica_glosy_z_kopert</span><span class="p">,</span> <span class="n">siedziba</span> 
-<span class="k">from</span> <span class="n">runda1</span> <span class="k">where</span> <span class="n">koperty_wrzucone_do_urny</span> <span class="o">&lt;&gt;</span> <span class="n">karty_z_kopert</span> 
-<span class="k">order</span> <span class="k">by</span> <span class="p">(</span><span class="n">koperty_wrzucone_do_urny</span> <span class="o">-</span> <span class="n">karty_z_kopert</span><span class="p">)</span> <span class="k">desc</span>
-</code></pre></div></div>
-:ET
