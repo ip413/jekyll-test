@@ -33,8 +33,8 @@ select avg(glosy_niewazne_proc) from runda1 where typ_obszaru="miasto" and wynik
 
 ## Result
 
-![](/assets/img/invalid-votes-result-above-official-rural.png)
-![](/assets/img/invalid-votes-result-above-official-urban.png)
+![]({{site.baseurl}}/assets/img/invalid-votes-result-above-official-rural.png)
+![]({{site.baseurl}}/assets/img/invalid-votes-result-above-official-urban.png)
 
 ## Discussion
 

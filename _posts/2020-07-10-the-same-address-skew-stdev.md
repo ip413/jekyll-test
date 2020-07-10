@@ -3,6 +3,9 @@ layout: post
 title: 'Polling stations with the same address and high and low standard deviation and skew in results - round 1'
 ---
 
+{{site.url}}
+
+
 ## SQL query
 
 ```sql
@@ -16,14 +19,14 @@ Plus node scripts calculating standard deviation, Pearson's second skewness coef
 ## Results and discussion
 
 Eight files: Eight files: 
-* [/assets/json/02-skew-standard-deviation-address-asc.json](/assets/json/02-skew-standard-deviation-address-asc.json) 
-* [/assets/json/02-skew-standard-deviation-address-desc.json](/assets/json/02-skew-standard-deviation-address-desc.json) 
-* [/assets/json/02-skew-standard-deviation-asc.json](/assets/json/02-skew-standard-deviation-asc.json) 
-* [/assets/json/02-skew-standard-deviation-desc.json](/assets/json/02-skew-standard-deviation-desc.json) 
-* [/assets/json/02-standard-deviation-address-asc.json](/assets/json/02-standard-deviation-address-asc.json) 
-* [/assets/json/02-standard-deviation-address-desc.json](/assets/json/02-standard-deviation-address-desc.json) 
-* [/assets/json/02-standard-deviation-asc.json](/assets/json/02-standard-deviation-asc.json) 
-* [/assets/json/02-standard-deviation-desc.json](/assets/json/02-standard-deviation-desc.json)
+* [{{site.baseurl}}/assets/json/02-skew-standard-deviation-address-asc.json]({{site.baseurl}}/assets/json/02-skew-standard-deviation-address-asc.json) 
+* [{{site.baseurl}}/assets/json/02-skew-standard-deviation-address-desc.json]({{site.baseurl}}/assets/json/02-skew-standard-deviation-address-desc.json) 
+* [{{site.baseurl}}/assets/json/02-skew-standard-deviation-asc.json]({{site.baseurl}}/assets/json/02-skew-standard-deviation-asc.json) 
+* [{{site.baseurl}}/assets/json/02-skew-standard-deviation-desc.json]({{site.baseurl}}/assets/json/02-skew-standard-deviation-desc.json) 
+* [{{site.baseurl}}/assets/json/02-standard-deviation-address-asc.json]({{site.baseurl}}/assets/json/02-standard-deviation-address-asc.json) 
+* [{{site.baseurl}}/assets/json/02-standard-deviation-address-desc.json]({{site.baseurl}}/assets/json/02-standard-deviation-address-desc.json) 
+* [{{site.baseurl}}/assets/json/02-standard-deviation-asc.json]({{site.baseurl}}/assets/json/02-standard-deviation-asc.json) 
+* [{{site.baseurl}}/assets/json/02-standard-deviation-desc.json]({{site.baseurl}}/assets/json/02-standard-deviation-desc.json)
 
 Files with "skew" in name are using using Pearson's second skewness coefficient but are sorted by standard deviation of skew for all voting points at the same address.
 
@@ -33,7 +36,7 @@ If you want to look for suspicious polling stations you should look at files wit
 
 If you are interested only in addresses of suspicious polling stations you can look at files with "addresses" in name.
 
-Some sample from the top of the [/assets/json/02-skew-standard-deviation-desc.json](/assets/json/02-skew-standard-deviation-desc.json) file:
+Some sample from the top of the [{{site.baseurl}}/assets/json/02-skew-standard-deviation-desc.json]({{site.baseurl}}/assets/json/02-skew-standard-deviation-desc.json) file:
 
 ```json
         "biedron": [
@@ -108,10 +111,10 @@ It looks like someone took 10 pp from **Trzaskowski** and put it into **Duda** r
 
 These are the other examples:
 
-Address: Zespół Szkolno-Przedszkolny Nr 5, ul. Magnoliowa 13, 15-669 Białystok ![Zespół Szkolno-Przedszkolny Nr 5, ul. Magnoliowa 13, 15-669 Białystok](/assets/img/one-polling-station-bialystok-school-5.png)
+Address: Zespół Szkolno-Przedszkolny Nr 5, ul. Magnoliowa 13, 15-669 Białystok ![Zespół Szkolno-Przedszkolny Nr 5, ul. Magnoliowa 13, 15-669 Białystok]({{site.baseurl}}/assets/img/one-polling-station-bialystok-school-5.png)
 
-Address: Szkoła Podstawowa nr 30 im. Króla Kazimierza Wielkiego, ul. Nałkowskich 110, 20-470 Lublin ![Szkoła Podstawowa nr 30 im. Króla Kazimierza Wielkiego, ul. Nałkowskich 110, 20-470 Lublin](/assets/img/one-polling-station-lublin-school-30.png)
+Address: Szkoła Podstawowa nr 30 im. Króla Kazimierza Wielkiego, ul. Nałkowskich 110, 20-470 Lublin ![Szkoła Podstawowa nr 30 im. Króla Kazimierza Wielkiego, ul. Nałkowskich 110, 20-470 Lublin]({{site.baseurl}}/assets/img/one-polling-station-lublin-school-30.png)
 
 And this is show it should like for polling stations with hundreds of votes.
 
-Address: Szkoła Podstawowa Nr 357, ul. Zachodzącego Słońca 25, 01-495 Warszawa ![Szkoła Podstawowa Nr 357, ul. Zachodzącego Słońca 25, 01-495 Warszawa](/assets/img/one-polling-station-warsaw-school-357.png)
+Address: Szkoła Podstawowa Nr 357, ul. Zachodzącego Słońca 25, 01-495 Warszawa ![Szkoła Podstawowa Nr 357, ul. Zachodzącego Słońca 25, 01-495 Warszawa]({{site.baseurl}}/assets/img/one-polling-station-warsaw-school-357.png)

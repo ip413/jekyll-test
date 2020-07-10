@@ -46,9 +46,9 @@ And one more query with ">" instead of "<=".
 |witkowski  |0.140   |0.146      |0.006             |0.119       |-0.022             |
 |zoltek     |0.234   |0.236      |0.003             |0.224       |-0.009             |
 
-![](/assets/img/official-vs-low-invalid-vs-high-invalid-votes.png)
+![]({{site.baseurl}}/assets/img/official-vs-low-invalid-vs-high-invalid-votes.png)
 
-![](/assets/img/official-vs-low-invalid-vs-high-invalid-votes-2.png)
+![]({{site.baseurl}}/assets/img/official-vs-low-invalid-vs-high-invalid-votes-2.png)
 
 ## Discussion
 

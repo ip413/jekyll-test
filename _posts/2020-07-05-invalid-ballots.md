@@ -48,7 +48,7 @@ order by karty_niewazne desc;
 13,"Monachium II, Konsulat Generalny RP Röntgenstrasse 5 81679 München, Monachium, Republika Federalna Niemiec"
 13,"Kino Morena, ul. Przybrzeżna 1, 73-140 Ińsko"
 ```
-More data here [/assets/sqlcsv/01-invalid-ballots.csv](/assets/sqlcsv/01-invalid-ballots.csv)
+More data here [{{site.baseurl}}/assets/sqlcsv/01-invalid-ballots.csv]({{site.baseurl}}/assets/sqlcsv/01-invalid-ballots.csv)
 ## Discussion
 
 Because everyone is able to put into ballot box whatever he want... I think co conclusion could be made about this aspect. Maybe analysis about how many ballots were given to people and how many were pulled out from the box could answer some questions here.

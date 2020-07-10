@@ -45,8 +45,8 @@ from runda1;
 | avgerage | 2.03    | 6.51  | 48.99 | 12.81    | 0.20     | 2.60     | 0.13       | 0.15    | 26.19       | 0.13      | 0.24   |
 
 
-![](/assets/img/results-official-vs-average.png)
-![](/assets/img/results-official-vs-average-2.png)
+![]({{site.baseurl}}/assets/img/results-official-vs-average.png)
+![]({{site.baseurl}}/assets/img/results-official-vs-average-2.png)
 
 ## Discussion
 
